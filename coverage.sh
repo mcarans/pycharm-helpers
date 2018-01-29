@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-. $(dirname "$0")/.pycharmrc
+. $1/activate
 py.test --cov-config .coveragerc --cov-report html --cov=.
-google-chrome htmlcov/index.html
+xdg-open htmlcov/index.html &
