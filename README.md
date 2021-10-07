@@ -9,6 +9,8 @@ Working directory = /home/mcarans/Programming/hdx-python-utilities/documentation
 
 From the PyCharm created sphinx documentation configuration, add a "Before Launch" task. Choose "Run Another Configuration" and select the configuration you created above.
 
+There is a file watcher that runs flynt and shed (which includes black and isort). The advantage of this bash script over calling directly is that autosaving can be left on as the tools are run int the background after a delay.
+
 ## Deprecated
 These are no longer necessary as PyCharm now has the functionality built in.
 
